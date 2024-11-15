@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./abouthmepage.css" />
+</head>
+<body>
+
+    <div class="hero-section">
+        <div>
+          <p><span id="date" class="date"></span></p>
+          <script>
+            const today = new Date();
+            const options = { weekday: "long", day: "2-digit", year: "numeric" };
+            const dateString = today.toLocaleDateString("en-US", options);
+            document.getElementById("date").textContent = dateString;
+          </script>
+        </div>
+  
+        <div class="nav-bar-options">
+          <a href="./index.html">HOME</a>
+          <a href="./Abouthme_page.html">ABOUTH ME</a>
+          <a href="#services">PROJECTS</a>
+          <a href="#contact">BLOGS</a>
+        </div>
+      </div>
+    
+</body>
+</html>

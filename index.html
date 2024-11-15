@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="hero-section">
+      <div>
+        <p><span id="date" class="date"></span></p>
+        <script>
+          const today = new Date();
+          const options = { weekday: "long", day: "2-digit", year: "numeric" };
+          const dateString = today.toLocaleDateString("en-US", options);
+          document.getElementById("date").textContent = dateString;
+        </script>
+      </div>
+
+      <div class="nav-bar-options">
+        <a href="./index.html">HOME</a>
+        <a href="./Abouthme_page.html">ABOUTH ME</a>
+        <a href="#services">PROJECTS</a>
+        <a href="#contact">BLOGS</a>
+      </div>
+    </div>
+
+    <div class="welcome-section">
+      <div class="details-section">
+        <h1>Hi, I’m sasith hansaka</h1>
+        <h5>
+          Full Stack Developer with experience in both front end and back end
+          development. I build end to end solutions for web, mobile, and desktop
+          applications
+        </h5>
+      </div>
+      <div class="myimage-section">
+
+      </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+  </body>
+</html>
